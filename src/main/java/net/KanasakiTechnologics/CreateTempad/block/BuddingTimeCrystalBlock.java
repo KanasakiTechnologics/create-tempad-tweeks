@@ -1,25 +1,21 @@
 package net.KanasakiTechnologics.CreateTempad.block;
 
+import net.KanasakiTechnologics.CreateTempad.register.TempadBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
-import net.minecraft.world.level.block.AmethystBlock;
-import net.minecraft.world.level.block.AmethystClusterBlock;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Fluids;
 
 public class BuddingTimeCrystalBlock extends AmethystBlock {
-    public static final int GROWTH_CHANCE = 5;
     private static final Direction[] DIRECTIONS = Direction.values();
 
-    public BuddingTimeCrystalBlock(Properties properties) {
-        super(properties);
+    public BuddingTimeCrystalBlock() {
+        super(Properties.of().sound(SoundType.AMETHYST).randomTicks().strength(1.5F));
     }
 
-    @Override
     protected void randomTick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
         if (random.nextInt(5) == 0) {
             Direction direction = DIRECTIONS[random.nextInt(DIRECTIONS.length)];
@@ -27,22 +23,21 @@ public class BuddingTimeCrystalBlock extends AmethystBlock {
             BlockState blockstate = level.getBlockState(blockpos);
             Block block = null;
             if (canClusterGrowAtState(blockstate)) {
-                block = Blocks.SMALL_AMETHYST_BUD;
-            } else if (blockstate.is(Blocks.SMALL_AMETHYST_BUD) && blockstate.getValue(AmethystClusterBlock.FACING) == direction) {
-                block = Blocks.MEDIUM_AMETHYST_BUD;
-            } else if (blockstate.is(Blocks.MEDIUM_AMETHYST_BUD) && blockstate.getValue(AmethystClusterBlock.FACING) == direction) {
-                block = Blocks.LARGE_AMETHYST_BUD;
-            } else if (blockstate.is(Blocks.LARGE_AMETHYST_BUD) && blockstate.getValue(AmethystClusterBlock.FACING) == direction) {
-                block = Blocks.AMETHYST_CLUSTER;
+                block = TempadBlocks.SMALL_TIME_CRYSTAL_BUD.get();
+            } else if (blockstate.is(TempadBlocks.SMALL_TIME_CRYSTAL_BUD) && blockstate.getValue(AmethystClusterBlock.FACING) == direction) {
+                block = TempadBlocks.MEDIUM_TIME_CRYSTAL_BUD.get();
+            } else if (blockstate.is(TempadBlocks.MEDIUM_TIME_CRYSTAL_BUD.get()) && blockstate.getValue(AmethystClusterBlock.FACING) == direction) {
+                block = TempadBlocks.LARGE_TIME_CRYSTAL_BUD.get();
+            } else if (blockstate.is(TempadBlocks.LARGE_TIME_CRYSTAL_BUD.get()) && blockstate.getValue(AmethystClusterBlock.FACING) == direction) {
+                block = TempadBlocks.TIME_CRYSTAL_CLUSTER.get();
             }
 
             if (block != null) {
-                BlockState blockstate1 = block.defaultBlockState()
-                        .setValue(AmethystClusterBlock.FACING, direction)
-                        .setValue(AmethystClusterBlock.WATERLOGGED, Boolean.valueOf(blockstate.getFluidState().getType() == Fluids.WATER));
+                BlockState blockstate1 = (BlockState)((BlockState)block.defaultBlockState().setValue(AmethystClusterBlock.FACING, direction)).setValue(AmethystClusterBlock.WATERLOGGED, blockstate.getFluidState().getType() == Fluids.WATER);
                 level.setBlockAndUpdate(blockpos, blockstate1);
             }
         }
+
     }
 
     public static boolean canClusterGrowAtState(BlockState state) {

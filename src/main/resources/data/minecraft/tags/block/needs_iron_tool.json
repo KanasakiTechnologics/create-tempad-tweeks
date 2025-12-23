@@ -1,0 +1,17 @@
+{
+  "values": [
+    "tempad:timedoor_projector",
+    "tempad:timedoor_marker",
+    "tempad:chronomark",
+    "tempad:workstation",
+    "tempad:workstation_child",
+    "tempad:metronome",
+    "createtempad:budding_base",
+    "createtempad:time_block",
+    "createtempad:time_cluster",
+    "createtempad:budding_time",
+    "createtempad:large_time_bud",
+    "createtempad:medium_time_bud",
+    "createtempad:small_time_bud"
+  ]
+}

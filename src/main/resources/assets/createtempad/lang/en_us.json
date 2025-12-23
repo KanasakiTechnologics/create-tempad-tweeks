@@ -1,3 +1,13 @@
 {
-
+  "creativetab.createmanacology.tempad": "Create Tempad",
+  "block.createtempad.budding_base":"Budding Crystal Base",
+  "block.createtempad.time_block":"§aTime Crystal Block",
+  "block.createtempad.time_cluster":"§aTime Crystal Cluster",
+  "block.createtempad.budding_time":"§aBudding Time Crystal",
+  "block.createtempad.large_time_bud":"§aLarge Time Crystal",
+  "block.createtempad.medium_time_bud":"§aMedium Time Crystal",
+  "block.createtempad.small_time_bud":"§aSmall Time Crystal",
+  "item.createtempad.time_shard": "§aTime Crystal Shard",
+  "item.createtempad.chrono_mechanism": "Chronos Mechanism",
+  "item.createtempad.incomplete_chrono_mechanism": "Incomplete Chronos Mechanism"
 }
