@@ -1,0 +1,9 @@
+{
+  "parent": "block/liquid",
+  "textures": {
+    "particle": "createtempad:block/shimmer_still",
+    "flow": "createtempad:block/shimmer_flow",
+    "still": "createtempad:block/shimmer_still"
+  }
+}
+

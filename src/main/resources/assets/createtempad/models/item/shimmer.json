@@ -1,6 +1,7 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "createtempad:item/steel_dust"
+    "layer0": "createtempad:block/shimmer_flow"
   }
 }
+

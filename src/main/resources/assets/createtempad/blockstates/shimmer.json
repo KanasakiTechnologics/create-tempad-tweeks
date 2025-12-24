@@ -1,0 +1,11 @@
+{
+  "variants": {},
+  "multipart": [
+    {
+      "apply": {
+        "model": "createtempad:block/shimmer",
+        "uvlock": true
+      }
+    }
+  ]
+}

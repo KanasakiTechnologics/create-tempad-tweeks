@@ -12,6 +12,7 @@
     "createtempad:budding_time",
     "createtempad:large_time_bud",
     "createtempad:medium_time_bud",
-    "createtempad:small_time_bud"
+    "createtempad:small_time_bud",
+    "createtempad:steel_block"
   ]
 }

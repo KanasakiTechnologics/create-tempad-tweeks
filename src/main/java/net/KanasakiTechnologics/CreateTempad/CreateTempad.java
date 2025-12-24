@@ -1,9 +1,6 @@
 package net.KanasakiTechnologics.CreateTempad;
 
-import net.KanasakiTechnologics.CreateTempad.register.TempadBlocks;
-import net.KanasakiTechnologics.CreateTempad.register.TempadCreativeTab;
-import net.KanasakiTechnologics.CreateTempad.register.TempadItems;
-import net.KanasakiTechnologics.CreateTempad.register.TempadTags;
+import net.KanasakiTechnologics.CreateTempad.register.*;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -49,6 +46,8 @@ public class CreateTempad {
         TempadTags.init();
         TempadItems.register(modEventBus);
         TempadBlocks.register(modEventBus);
+        TempadFluid.register(modEventBus);
+        TempadFluidType.register(modEventBus);
         TempadCreativeTab.register(modEventBus);
         modEventBus.addListener(this::addCreative);
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
@@ -59,7 +58,20 @@ public class CreateTempad {
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS){
+            event.accept(TempadItems.ENDER_SHARD);
+            event.accept(TempadItems.AMETHYST_DUST);
+            event.accept(TempadItems.ENDER_DUST);
+            event.accept(TempadItems.IRON_DUST);
+            event.accept(TempadItems.COAL_DUST);
+            event.accept(TempadItems.STEEL_DUST);
+            event.accept(TempadItems.STEEL_INGOT);
+            event.accept(TempadItems.TIME_STEEL_SHEET);
+        }
 
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept(TempadBlocks.STEEL_BLOCK);
+        }
     }
 
 

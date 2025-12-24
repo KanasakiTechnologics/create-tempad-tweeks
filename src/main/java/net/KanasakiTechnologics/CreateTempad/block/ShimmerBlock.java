@@ -1,0 +1,30 @@
+package net.KanasakiTechnologics.CreateTempad.block;
+
+import net.minecraft.core.BlockPos;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.LiquidBlock;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.material.FlowingFluid;
+import net.minecraft.world.level.material.MapColor;
+
+public class ShimmerBlock extends LiquidBlock {
+    public ShimmerBlock(FlowingFluid fluid) {
+        super(fluid, Properties.of().mapColor(MapColor.WATER).lightLevel(p ->15).noCollission().strength(100.00f).noLootTable().replaceable());
+
+    }
+
+    @Override
+    public void entityInside(BlockState state, Level level, BlockPos pos, Entity entity) {
+        super.entityInside(state, level, pos, entity);
+
+        if (entity instanceof LivingEntity living) {
+            if (!level.isClientSide()) {
+                living.addEffect(new MobEffectInstance(MobEffects.GLOWING, 60, 0, false, true));
+            }
+        }
+    }
+}

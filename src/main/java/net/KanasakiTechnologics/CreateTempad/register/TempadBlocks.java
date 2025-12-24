@@ -2,6 +2,7 @@ package net.KanasakiTechnologics.CreateTempad.register;
 
 import net.KanasakiTechnologics.CreateTempad.CreateTempad;
 import net.KanasakiTechnologics.CreateTempad.block.BuddingTimeCrystalBlock;
+import net.KanasakiTechnologics.CreateTempad.block.ShimmerBlock;
 import net.KanasakiTechnologics.CreateTempad.block.TimeCrystalBlock;
 import net.KanasakiTechnologics.CreateTempad.block.TimeCrystalClusterBlock;
 import net.minecraft.world.item.BlockItem;
@@ -9,6 +10,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.FlowingFluid;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.bus.api.IEventBus;
@@ -19,9 +21,17 @@ import java.util.function.Supplier;
 
 import static net.KanasakiTechnologics.CreateTempad.register.TempadItems.ITEMS;
 
+@SuppressWarnings("unused")
 public class TempadBlocks {
 
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(CreateTempad.MOD_ID);
+
+    //Blocks
+    public static final DeferredBlock<Block> STEEL_BLOCK = registerBlock("steel_block",
+            () -> new Block(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    //Shimmer
+    public static DeferredBlock<LiquidBlock> SHIMMER = BLOCKS.register("shimmer",
+            () -> new ShimmerBlock((FlowingFluid) TempadFluid.SHIMMER.get()));
 
     //Time Crystal
     public static final DeferredBlock<Block> BUDDING_BASE = registerBlock("budding_base",

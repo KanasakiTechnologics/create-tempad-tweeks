@@ -1,5 +1,25 @@
 {
   "creativetab.createmanacology.tempad": "Create Tempad",
+
+  "block.createtempad.steel_block":"Steel Block",
+  "item.createtempad.steel_dust": "Steel Dust",
+  "item.createtempad.steel_ingot": "Steel Ingot",
+
+  "item.createtempad.time_steel_sheet": "Time Steel Alloy Sheet",
+  "item.createtempad.ender_shard": "Ender Shard",
+
+  "item.createtempad.iron_dust": "Iron Dust",
+  "item.createtempad.coal_dust": "Coal Dust",
+  "item.createtempad.amethyst_dust": "Amethyst Dust",
+  "item.createtempad.ender_pearl_dust": "Ender Dust",
+
+  "item.createtempad.shimmer_bucket": "Shimmer Bucket",
+  "block.createtempad.shimmer": "Shimmer",
+  "fluid_type.createtempad.shimmer_type": "Shimmer",
+
+  "item.createtempad.incomplete_integrated_circuit": "Incomplete Integrated Circuit",
+  "item.createtempad.integrated_circuit": "Integrated Circuit",
+
   "block.createtempad.budding_base":"Budding Crystal Base",
   "block.createtempad.time_block":"§aTime Crystal Block",
   "block.createtempad.time_cluster":"§aTime Crystal Cluster",
@@ -8,6 +28,7 @@
   "block.createtempad.medium_time_bud":"§aMedium Time Crystal",
   "block.createtempad.small_time_bud":"§aSmall Time Crystal",
   "item.createtempad.time_shard": "§aTime Crystal Shard",
+
   "item.createtempad.chrono_mechanism": "Chronos Mechanism",
   "item.createtempad.incomplete_chrono_mechanism": "Incomplete Chronos Mechanism"
 }
