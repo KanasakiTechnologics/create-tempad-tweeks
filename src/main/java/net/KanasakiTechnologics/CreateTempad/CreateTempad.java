@@ -3,6 +3,7 @@ package net.KanasakiTechnologics.CreateTempad;
 import net.KanasakiTechnologics.CreateTempad.register.TempadBlocks;
 import net.KanasakiTechnologics.CreateTempad.register.TempadCreativeTab;
 import net.KanasakiTechnologics.CreateTempad.register.TempadItems;
+import net.KanasakiTechnologics.CreateTempad.register.TempadTags;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -45,6 +46,7 @@ public class CreateTempad {
         NeoForge.EVENT_BUS.register(this);
 
 
+        TempadTags.init();
         TempadItems.register(modEventBus);
         TempadBlocks.register(modEventBus);
         TempadCreativeTab.register(modEventBus);
