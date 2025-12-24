@@ -1,0 +1,18 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "tag": "c:dusts/iron"
+    },
+    {
+      "tag": "c:coal_dusts"
+    }
+  ],
+  "results": [
+    {
+      "count": 2,
+      "id": "createtempad:steel_dust"
+    }
+  ]
+}

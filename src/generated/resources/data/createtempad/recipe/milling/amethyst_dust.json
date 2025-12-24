@@ -1,0 +1,14 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "minecraft:amethyst_shard"
+    }
+  ],
+  "processing_time": 150,
+  "results": [
+    {
+      "id": "createtempad:amethyst_dust"
+    }
+  ]
+}

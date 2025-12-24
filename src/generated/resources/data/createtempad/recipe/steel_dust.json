@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "tag": "c:coal_dusts"
+    },
+    "I": {
+      "tag": "c:dusts/iron"
+    }
+  },
+  "pattern": [
+    "ICC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "createtempad:steel_dust"
+  }
+}

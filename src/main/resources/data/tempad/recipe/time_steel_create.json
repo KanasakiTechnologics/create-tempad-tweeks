@@ -9,7 +9,7 @@
     "heat_requirement": "superheated",
     "ingredients": [
         {
-            "tag": "c:ingots/iron"
+            "tag": "c:ingots/steel"
         },
         {
             "item": "minecraft:netherite_scrap"

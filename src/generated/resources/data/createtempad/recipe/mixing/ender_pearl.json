@@ -1,0 +1,26 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "createtempad:ender_shard"
+    },
+    {
+      "item": "createtempad:ender_shard"
+    },
+    {
+      "item": "createtempad:ender_shard"
+    },
+    {
+      "item": "createtempad:ender_shard"
+    },
+    {
+      "tag": "c:amethyst_dusts"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:ender_pearl"
+    }
+  ]
+}

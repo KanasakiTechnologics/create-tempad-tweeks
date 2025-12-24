@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "tempad:time_steel"
+    }
+  ],
+  "results": [
+    {
+      "id": "createtempad:time_steel_sheet"
+    }
+  ]
+}

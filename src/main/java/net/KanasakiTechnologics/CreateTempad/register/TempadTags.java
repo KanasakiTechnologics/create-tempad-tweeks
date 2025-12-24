@@ -90,7 +90,8 @@ public class TempadTags {
     public enum BlockTags {
 
         STORAGE_BLOCKS(NameSpace.COMMON,"storage_blocks"),
-        STEEL_BLOCKS(NameSpace.COMMON, "storage_blocks/steel");
+        STEEL_BLOCKS(NameSpace.COMMON, "storage_blocks/steel"),
+        TIME_BLOCKS(NameSpace.COMMON, "storage_blocks/time");
 
         public final TagKey<Block> tag;
         public final boolean alwaysDatagen;
@@ -146,17 +147,21 @@ public class TempadTags {
 
     public enum ItemTags {
         DUSTS(NameSpace.COMMON, "dusts"),
+        COAL_DUSTS(NameSpace.COMMON,"coal_dusts"),
+        AMETHYST_DUSTS(NameSpace.COMMON,"amethyst_dusts"),
         STEEL_DUSTS(NameSpace.COMMON, "dusts/steel"),
         IRON_DUSTS(NameSpace.COMMON, "dusts/iron"),
         ENDER_DUSTS(NameSpace.COMMON, "dusts/ender"),
 
         INGOTS(NameSpace.COMMON,"ingots"),
         STEEL_INGOTS(NameSpace.COMMON,"ingots/steel"),
+        IRON_INGOTS(NameSpace.COMMON,"ingots/iron"),
         NUGGETS(NameSpace.COMMON,"nuggets"),
         STEEL_NUGGETS(NameSpace.COMMON, "nuggets/steel"),
 
         STORAGE_BLOCKS(NameSpace.COMMON,"storage_blocks"),
-        STEEL_BLOCKS(NameSpace.COMMON, "storage_blocks/steel");
+        STEEL_BLOCKS(NameSpace.COMMON, "storage_blocks/steel"),
+        TIME_BLOCKS(NameSpace.COMMON, "storage_blocks/time");
 
         public final TagKey<Item> tag;
         public final boolean alwaysDatagen;
@@ -200,7 +205,7 @@ public class TempadTags {
 
     public enum FluidTags {
 
-        REFINED_RADIANCE(NameSpace.MOD,"refined_radiance");
+        SHIMMER(NameSpace.COMMON,"shimmer");
 
         public final TagKey<Fluid> tag;
         public final boolean alwaysDatagen;

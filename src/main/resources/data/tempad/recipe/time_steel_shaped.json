@@ -9,7 +9,7 @@
   "category": "misc",
   "key": {
     "i": {
-      "tag": "c:ingots/iron"
+      "tag": "c:ingots/steel"
     },
     "s": {
       "item": "minecraft:netherite_scrap"

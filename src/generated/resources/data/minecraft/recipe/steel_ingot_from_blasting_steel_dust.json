@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.5,
+  "group": "steel",
+  "ingredient": {
+    "item": "createtempad:steel_dust"
+  },
+  "result": {
+    "count": 1,
+    "id": "createtempad:steel_ingot"
+  }
+}

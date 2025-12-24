@@ -1,0 +1,14 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "tag": "minecraft:coals"
+    }
+  ],
+  "processing_time": 150,
+  "results": [
+    {
+      "id": "createtempad:coal_dust"
+    }
+  ]
+}

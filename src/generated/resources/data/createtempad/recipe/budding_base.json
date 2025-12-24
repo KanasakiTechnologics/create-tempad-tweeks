@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:amethyst_block"
+    },
+    "B": {
+      "item": "minecraft:bone_meal"
+    },
+    "E": {
+      "item": "createtempad:ender_pearl_dust"
+    }
+  },
+  "pattern": [
+    "EBE",
+    "BAB",
+    "EBE"
+  ],
+  "result": {
+    "count": 1,
+    "id": "createtempad:budding_base"
+  }
+}

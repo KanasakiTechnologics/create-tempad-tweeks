@@ -1,0 +1,12 @@
+// 1.21.1	2025-12-25T10:31:31.9518132	Tags for minecraft:item mod id createtempad
+3608ca2e19f57c30b05afef72f95f28d162d76f7 data/c/tags/item/amethyst_dusts.json
+658c71d6c1ea701be01b18ad94292a6dfad53e51 data/c/tags/item/coal_dusts.json
+a0fd3536bf3e0b3e3b0655900e5e769875227929 data/c/tags/item/dusts.json
+19f1b0410551f655e1688072e2515b462fdf5529 data/c/tags/item/dusts/ender.json
+0e04ed710bd1d0b2bd6f5c521a637911c7970bf5 data/c/tags/item/dusts/iron.json
+7b1aa4ba48c2b4f34b309c78200a032d2328c757 data/c/tags/item/dusts/steel.json
+8dd6c7aa4371dd193024d7cd0d27fd1e1fb42950 data/c/tags/item/ingots.json
+8dd6c7aa4371dd193024d7cd0d27fd1e1fb42950 data/c/tags/item/ingots/steel.json
+83e598306c1e0b67367a26fa2239b90d214119b6 data/c/tags/item/storage_blocks.json
+6996c4cec8ad3336eea6224e282f597237569437 data/c/tags/item/storage_blocks/steel.json
+c16e9ceff2d1a40f2d0015ee7298a643eb9662ab data/c/tags/item/storage_blocks/time.json
