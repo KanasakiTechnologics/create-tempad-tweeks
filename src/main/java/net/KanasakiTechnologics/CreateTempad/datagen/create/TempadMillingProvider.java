@@ -34,6 +34,9 @@ public final class TempadMillingProvider extends MillingRecipeGen {
             AMETHYST_DUST = create("amethyst_dust", b -> b.duration(150)
                     .require(Items.AMETHYST_SHARD)
                     .output(TempadItems.AMETHYST_DUST)),
+            ENDER_SHARD = create(() -> Items.ECHO_SHARD,b -> b.duration(150)
+                    .output(TempadItems.ENDER_SHARD,1)
+                    .output(.25F,TempadItems.ENDER_SHARD)),
             ENDER_DUST = create("ender_dust", b -> b.duration(150)
                     .require(Items.ENDER_PEARL)
                     .output(TempadItems.ENDER_DUST));
