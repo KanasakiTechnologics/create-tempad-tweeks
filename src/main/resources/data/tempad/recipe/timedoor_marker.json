@@ -6,13 +6,13 @@
       "tag": "c:ender_pearls"
     },
     "I": {
-      "tag": "c:storage_blocks/iron"
+      "tag": "c:storage_blocks/steel"
     },
     "g": {
       "tag": "c:glass_blocks/colorless"
     },
     "i": {
-      "tag": "c:ingots/iron"
+      "tag": "c:ingots/steel"
     }
   },
   "pattern": [

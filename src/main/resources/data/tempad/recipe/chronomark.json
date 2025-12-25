@@ -3,19 +3,19 @@
   "category": "misc",
   "key": {
     "E": {
-      "tag": "c:ender_pearls"
+      "item": "createtempad:chrono_mechanism"
     },
     "G": {
       "tag": "c:glass_blocks/tinted"
     },
     "I": {
-      "tag": "c:storage_blocks/iron"
+      "tag": "c:storage_blocks/steel"
     },
     "T": {
       "item": "tempad:time_steel"
     },
     "i": {
-      "tag": "c:ingots/iron"
+      "tag": "c:ingots/steel"
     }
   },
   "pattern": [

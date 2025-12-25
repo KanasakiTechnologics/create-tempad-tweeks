@@ -6,16 +6,13 @@
       "item": "tempad:chronon_battery"
     },
     "E": {
-      "tag": "c:ender_pearls"
+      "item": "createtempad:chrono_mechanism"
     },
     "G": {
       "tag": "c:glass_blocks/tinted"
     },
     "Q": {
-      "tag": "c:gems/quartz"
-    },
-    "R": {
-      "item": "minecraft:redstone_lamp"
+      "item": "create:electron_tube"
     },
     "T": {
       "item": "tempad:time_steel"
@@ -23,7 +20,7 @@
   },
   "pattern": [
     "GGG",
-    "QER",
+    "QEQ",
     "TBT"
   ],
   "result": {

@@ -8,13 +8,16 @@
     "T": {
       "item": "tempad:time_steel"
     },
+    "E": {
+      "item": "createtempad:time_electron_tube"
+    },
     "h": {
       "item": "minecraft:ender_chest"
     }
   },
   "pattern": [
+    "EBE",
     "ThT",
-    "TBT",
     "TBT"
   ],
   "result": {

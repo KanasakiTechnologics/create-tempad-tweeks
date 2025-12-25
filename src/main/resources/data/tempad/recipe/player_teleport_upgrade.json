@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "E": {
-      "tag": "c:ender_pearls"
+      "item": "createtempad:time_electron_tube"
     },
     "L": {
       "item": "tempad:location_broadcaster"

@@ -12,10 +12,10 @@
       "item": "tempad:time_steel"
     },
     "e": {
-      "tag": "c:gems/emerald"
+      "item": "createtempad:chrono_mechanism"
     },
     "r": {
-      "tag": "c:dusts/redstone"
+      "tag": "create:electron_tube"
     }
   },
   "pattern": [

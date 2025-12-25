@@ -6,7 +6,7 @@
       "tag": "c:glass_blocks/tinted"
     },
     "Q": {
-      "tag": "c:gems/quartz"
+      "item": "createtempad:time_electron_tube"
     },
     "T": {
       "item": "tempad:time_steel"

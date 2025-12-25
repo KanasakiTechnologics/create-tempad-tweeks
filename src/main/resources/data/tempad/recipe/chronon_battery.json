@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "A": {
-      "tag": "c:gems/amethyst"
+      "item": "createtempad:time_electron_tube"
     },
     "C": {
       "item": "tempad:chronon_cell"
