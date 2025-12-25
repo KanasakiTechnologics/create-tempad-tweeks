@@ -20,6 +20,7 @@ public class TempadCreativeTab {
                         output.accept(TempadItems.SHIMMER_BUCKET);
                         output.accept(TempadItems.INTEGRATED_CIRCUIT);
                         output.accept(TempadItems.CHRONOS_MECHANISM);
+                        output.accept(TempadItems.TIME_ELECTRON_TUBE);
                         output.accept(TempadItems.TIME_CRYSTAL_SHARD);
                         output.accept(TempadBlocks.BUDDING_BASE);
                         output.accept(TempadBlocks.TIME_CRYSTAL_BLOCK);

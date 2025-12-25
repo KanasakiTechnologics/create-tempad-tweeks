@@ -1,6 +1,5 @@
 {
   "values": [
-    "createtempad:steel_ingot",
     {
       "id": "tempad:time_steel",
       "required": false

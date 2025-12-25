@@ -156,8 +156,11 @@ public class TempadTags {
         INGOTS(NameSpace.COMMON,"ingots"),
         STEEL_INGOTS(NameSpace.COMMON,"ingots/steel"),
         IRON_INGOTS(NameSpace.COMMON,"ingots/iron"),
+        TIME_INGOTS(NameSpace.COMMON,"ingots/time"),
+        GOLD_PLATES(NameSpace.COMMON,"plates/gold"),
+        BRASS_PLATES(NameSpace.COMMON,"plates/brass"),
         NUGGETS(NameSpace.COMMON,"nuggets"),
-        STEEL_NUGGETS(NameSpace.COMMON, "nuggets/steel"),
+        BRASS_NUGGETS(NameSpace.COMMON, "nuggets/brass"),
 
         STORAGE_BLOCKS(NameSpace.COMMON,"storage_blocks"),
         STEEL_BLOCKS(NameSpace.COMMON, "storage_blocks/steel"),

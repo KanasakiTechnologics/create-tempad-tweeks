@@ -1,6 +1,7 @@
 package net.KanasakiTechnologics.CreateTempad.datagen;
 
 import net.KanasakiTechnologics.CreateTempad.CreateTempad;
+import net.KanasakiTechnologics.CreateTempad.datagen.create.TempadAssemblingProvider;
 import net.KanasakiTechnologics.CreateTempad.datagen.create.TempadCrushingProvider;
 import net.KanasakiTechnologics.CreateTempad.datagen.create.TempadMillingProvider;
 import net.KanasakiTechnologics.CreateTempad.datagen.create.TempadMixingProvider;
@@ -28,6 +29,7 @@ public class DataGenerators {
         generator.addProvider(event.includeServer(), new TempadMixingProvider(packOutput, lookupProvider));
         generator.addProvider(event.includeServer(), new TempadMillingProvider(packOutput, lookupProvider));
         generator.addProvider(event.includeServer(), new TempadCrushingProvider(packOutput, lookupProvider));
+        generator.addProvider(event.includeServer(), new TempadAssemblingProvider(packOutput, lookupProvider));
 
         BlockTagsProvider blockTagsProvider= new TMBlockTagsProvider(packOutput,lookupProvider,existingFileHelper);
         generator.addProvider(event.includeServer(),blockTagsProvider);

@@ -38,6 +38,8 @@ public class TempadItems {
     //Time Shard
     public static final DeferredItem<Item> TIME_CRYSTAL_SHARD = ITEMS.register("time_shard",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> TIME_ELECTRON_TUBE = ITEMS.register("time_electron_tube",
+            () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> CHRONOS_MECHANISM = ITEMS.register("chrono_mechanism",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> INCOMPLETE_CHRONOS_MECHANISM = ITEMS.register("incomplete_chrono_mechanism",

@@ -66,6 +66,13 @@ public class TMRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .unlockedBy("has_time",has(TempadBlocks.TIME_CRYSTAL_BLOCK))
                 .save(recipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, TempadItems.TIME_ELECTRON_TUBE,1)
+                .pattern("T")
+                .pattern("B")
+                .define('T',TempadItems.TIME_CRYSTAL_SHARD)
+                .define('B',TempadTags.ItemTags.BRASS_PLATES.tag)
+                .unlockedBy("has_time", has(TempadItems.TIME_CRYSTAL_SHARD)).save(recipeOutput);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.ENDER_PEARL,1)
                 .pattern("EEE")
                 .pattern("E E")

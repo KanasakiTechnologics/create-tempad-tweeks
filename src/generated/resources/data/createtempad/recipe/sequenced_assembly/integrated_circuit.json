@@ -1,0 +1,82 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "tag": "c:plates/gold"
+  },
+  "loops": 4,
+  "results": [
+    {
+      "chance": 160.0,
+      "id": "createtempad:integrated_circuit"
+    },
+    {
+      "chance": 5.0,
+      "id": "create:golden_sheet"
+    },
+    {
+      "chance": 4.0,
+      "id": "minecraft:redstone"
+    },
+    {
+      "chance": 4.0,
+      "id": "minecraft:quartz"
+    },
+    {
+      "chance": 4.0,
+      "id": "create:brass_nugget"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createtempad:incomplete_integrated_circuit"
+        },
+        {
+          "item": "minecraft:redstone"
+        }
+      ],
+      "results": [
+        {
+          "id": "createtempad:incomplete_integrated_circuit"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createtempad:incomplete_integrated_circuit"
+        },
+        {
+          "item": "minecraft:quartz"
+        }
+      ],
+      "results": [
+        {
+          "id": "createtempad:incomplete_integrated_circuit"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createtempad:incomplete_integrated_circuit"
+        },
+        {
+          "tag": "c:nuggets/brass"
+        }
+      ],
+      "results": [
+        {
+          "id": "createtempad:incomplete_integrated_circuit"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "createtempad:incomplete_integrated_circuit"
+  }
+}
