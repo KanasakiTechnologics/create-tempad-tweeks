@@ -23,34 +23,34 @@ public final class TempadMixingProvider extends MixingRecipeGen {
     }
 
     GeneratedRecipe
-            SHIMMER = create("shimmer", b -> b
-            .require(Fluids.WATER,500)
-            .require(AllItems.EXP_NUGGET)
-            .require(AllItems.EXP_NUGGET)
-            .require(TempadTags.ItemTags.AMETHYST_DUSTS.tag)
-            .require(TempadTags.ItemTags.ENDER_DUSTS.tag)
-            .output(TempadFluid.SHIMMER.get(), 100)),
+                SHIMMER = create("shimmer", b -> b
+                        .require(Fluids.WATER,500)
+                        .require(AllItems.EXP_NUGGET)
+                        .require(AllItems.EXP_NUGGET)
+                        .require(TempadTags.ItemTags.AMETHYST_DUSTS.tag)
+                        .require(TempadTags.ItemTags.ENDER_DUSTS.tag)
+                        .output(TempadFluid.SHIMMER.get(), 100)),
 
-    ENDER_PEARL = create("ender_pearl", b -> b.requiresHeat(HeatCondition.HEATED)
-            .require(TempadItems.ENDER_SHARD)
-            .require(TempadItems.ENDER_SHARD)
-            .require(TempadItems.ENDER_SHARD)
-            .require(TempadItems.ENDER_SHARD)
-            .require(TempadTags.ItemTags.AMETHYST_DUSTS.tag)
-            .output(Items.ENDER_PEARL)),
+                ENDER_PEARL = create("ender_pearl", b -> b.requiresHeat(HeatCondition.HEATED)
+                        .require(TempadItems.ENDER_SHARD)
+                        .require(TempadItems.ENDER_SHARD)
+                        .require(TempadItems.ENDER_SHARD)
+                        .require(TempadItems.ENDER_SHARD)
+                        .require(TempadTags.ItemTags.AMETHYST_DUSTS.tag)
+                        .output(Items.ENDER_PEARL)),
 
-    BUDDING_BASE = create("budding_base", b -> b.requiresHeat(HeatCondition.HEATED)
-            .require(Fluids.WATER,1000)
-            .require(AllItems.EXP_NUGGET)
-            .require(AllItems.EXP_NUGGET)
-            .require(Blocks.AMETHYST_BLOCK)
-            .require(TempadTags.ItemTags.ENDER_DUSTS.tag)
-            .require(TempadTags.ItemTags.ENDER_DUSTS.tag)
-            .output(TempadBlocks.BUDDING_BASE)),
+                BUDDING_BASE = create("budding_base", b -> b.requiresHeat(HeatCondition.HEATED)
+                        .require(Fluids.WATER,1000)
+                        .require(AllItems.EXP_NUGGET)
+                        .require(AllItems.EXP_NUGGET)
+                        .require(Blocks.AMETHYST_BLOCK)
+                        .require(TempadTags.ItemTags.ENDER_DUSTS.tag)
+                        .require(TempadTags.ItemTags.ENDER_DUSTS.tag)
+                        .output(TempadBlocks.BUDDING_BASE)),
 
-    STEEL_DUST = create("steel_dust", b -> b.requiresHeat(HeatCondition.HEATED)
-            .require(TempadTags.ItemTags.IRON_DUSTS.tag)
-            .require(TempadTags.ItemTags.COAL_DUSTS.tag)
-            .output(TempadItems.STEEL_DUST,2));
+                STEEL_DUST = create("steel_dust", b -> b.requiresHeat(HeatCondition.HEATED)
+                        .require(TempadTags.ItemTags.IRON_DUSTS.tag)
+                        .require(TempadTags.ItemTags.COAL_DUSTS.tag)
+                        .output(TempadItems.STEEL_DUST,2));
 
 }
