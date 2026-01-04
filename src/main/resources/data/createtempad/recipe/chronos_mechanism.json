@@ -1,17 +1,17 @@
 {
   "type": "create:sequenced_assembly",
   "ingredient": {
-    "tag": "c:plates/gold"
+    "item": "createtempad:time_steel_sheet"
   },
-  "loops": 4,
+  "loops": 5,
   "results": [
     {
       "chance": 160.0,
-      "id": "createtempad:integrated_circuit"
+      "id": "createtempad:chrono_mechanism"
     },
     {
-      "chance": 5.0,
-      "id": "create:golden_sheet"
+      "chance": 8.0,
+      "id": "justdirethings:time_crystal"
     },
     {
       "chance": 4.0,
@@ -20,10 +20,6 @@
     {
       "chance": 4.0,
       "id": "minecraft:quartz"
-    },
-    {
-      "chance": 4.0,
-      "id": "create:brass_nugget"
     }
   ],
   "sequence": [
@@ -31,15 +27,15 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "createtempad:incomplete_integrated_circuit"
+          "item": "createtempad:incomplete_chrono_mechanism"
         },
         {
-          "item": "minecraft:redstone"
+          "item": "create:electron_tube"
         }
       ],
       "results": [
         {
-          "id": "createtempad:incomplete_integrated_circuit"
+          "id": "createtempad:incomplete_chrono_mechanism"
         }
       ]
     },
@@ -47,15 +43,15 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "createtempad:incomplete_integrated_circuit"
+          "item": "createtempad:incomplete_chrono_mechanism"
         },
         {
-          "item": "minecraft:quartz"
+          "item": "createtempad:integrated_circuit"
         }
       ],
       "results": [
         {
-          "id": "createtempad:incomplete_integrated_circuit"
+          "id": "createtempad:incomplete_chrono_mechanism"
         }
       ]
     },
@@ -63,20 +59,20 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "createtempad:incomplete_integrated_circuit"
+          "item": "createtempad:incomplete_chrono_mechanism"
         },
         {
-          "tag": "c:nuggets/brass"
+          "item": "createtempad:time_electron_tube"
         }
       ],
       "results": [
         {
-          "id": "createtempad:incomplete_integrated_circuit"
+          "id": "createtempad:incomplete_chrono_mechanism"
         }
       ]
     }
   ],
   "transitional_item": {
-    "id": "createtempad:incomplete_integrated_circuit"
+    "id": "createtempad:incomplete_chrono_mechanism"
   }
 }

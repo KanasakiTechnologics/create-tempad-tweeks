@@ -24,39 +24,4 @@ public final class TempadAssemblingProvider extends SequencedAssemblyRecipeGen {
         super(output, registries, CreateTempad.MOD_ID);
     }
 
-    GeneratedRecipe
-            INTEGRATED_CIRCUIT = create("integrated_circuit",b -> b.require(Ingredient.of(TempadTags.ItemTags.GOLD_PLATES.tag))
-                    .transitionTo(TempadItems.INCOMPLETE_INTEGRATED_CIRCUIT)
-                    .addOutput(TempadItems.INTEGRATED_CIRCUIT,160)
-                    .addOutput(AllItems.GOLDEN_SHEET,5)
-                    .addOutput(Items.REDSTONE,4)
-                    .addOutput(Items.QUARTZ,4)
-                    .addOutput(AllItems.BRASS_NUGGET,4)
-                    .loops(4)
-                    .addStep(DeployerApplicationRecipe::new, rb -> rb.require(Items.REDSTONE))
-                    .addStep(DeployerApplicationRecipe::new,rb -> rb.require(Items.QUARTZ))
-                    .addStep(DeployerApplicationRecipe::new,rb -> rb.require(TempadTags.ItemTags.BRASS_NUGGETS.tag))),
-
-            BUDDING_TIME_CRYSTAL = create("budding_time_crystal",b -> b.require(TempadBlocks.BUDDING_BASE)
-                    .transitionTo(TempadBlocks.BUDDING_BASE)
-                    .addOutput(TempadBlocks.BUDDING_TIME_CRYSTAL,30)
-                    .addOutput(TempadItems.TIME_CRYSTAL_SHARD,35)
-                    .addOutput(Blocks.AMETHYST_BLOCK,35)
-                    .loops(5)
-                    .addStep(DeployerApplicationRecipe::new, rb -> rb.require(AllItems.EXP_NUGGET))
-                    .addStep(FillingRecipe::new, rb -> rb.require((FlowingFluid) TempadFluid.SHIMMER.get(),250))
-                    .addStep(DeployerApplicationRecipe::new,rb -> rb.require(TempadTags.ItemTags.AMETHYST_DUSTS.tag))
-                    .addStep(FillingRecipe::new, rb -> rb.require((FlowingFluid) TempadFluid.SHIMMER.get(),250))
-                    .addStep(DeployerApplicationRecipe::new,rb -> rb.require(TempadTags.ItemTags.ENDER_DUSTS.tag))),
-
-            CHRONOS_MECHANISM = create("chronos_mechanism",b -> b.require(TempadItems.TIME_STEEL_SHEET)
-                    .transitionTo(TempadItems.INCOMPLETE_CHRONOS_MECHANISM)
-                    .addOutput(TempadItems.CHRONOS_MECHANISM,160)
-                    .addOutput(TempadItems.TIME_CRYSTAL_SHARD,8)
-                    .addOutput(Items.REDSTONE,4)
-                    .addOutput(Items.QUARTZ,4)
-                    .loops(5)
-                    .addStep(DeployerApplicationRecipe::new, rb -> rb.require(AllItems.ELECTRON_TUBE))
-                    .addStep(DeployerApplicationRecipe::new,rb -> rb.require(TempadItems.INTEGRATED_CIRCUIT))
-                    .addStep(DeployerApplicationRecipe::new,rb -> rb.require(TempadItems.TIME_ELECTRON_TUBE)));
 }

@@ -31,29 +31,6 @@ public final class TempadMixingProvider extends MixingRecipeGen {
                         .require(TempadTags.ItemTags.ENDER_DUSTS.tag)
                         .output(TempadFluid.SHIMMER.get(), 100)),
 
-                ENDER_PEARL = create("ender_pearl", b -> b.requiresHeat(HeatCondition.HEATED)
-                        .require(TempadItems.ENDER_SHARD)
-                        .require(TempadItems.ENDER_SHARD)
-                        .require(TempadItems.ENDER_SHARD)
-                        .require(TempadItems.ENDER_SHARD)
-                        .require(TempadTags.ItemTags.AMETHYST_DUSTS.tag)
-                        .output(Items.ENDER_PEARL)),
-
-                BUDDING_BASE = create("budding_base", b -> b.requiresHeat(HeatCondition.HEATED)
-                        .require(Fluids.WATER,1000)
-                        .require(AllItems.EXP_NUGGET)
-                        .require(AllItems.EXP_NUGGET)
-                        .require(Blocks.AMETHYST_BLOCK)
-                        .require(TempadTags.ItemTags.ENDER_DUSTS.tag)
-                        .require(TempadTags.ItemTags.ENDER_DUSTS.tag)
-                        .output(TempadBlocks.BUDDING_BASE)),
-
-                ECHO_SHARD = create("echo_shard",b -> b.requiresHeat(HeatCondition.HEATED)
-                        .require(Items.AMETHYST_SHARD)
-                        .require(Items.SCULK_CATALYST)
-                        .output(Items.ECHO_SHARD)
-                        .output(Items.SCULK_CATALYST)),
-
                 STEEL_DUST = create("steel_dust", b -> b.requiresHeat(HeatCondition.HEATED)
                         .require(TempadTags.ItemTags.IRON_DUSTS.tag)
                         .require(TempadTags.ItemTags.COAL_DUSTS.tag)

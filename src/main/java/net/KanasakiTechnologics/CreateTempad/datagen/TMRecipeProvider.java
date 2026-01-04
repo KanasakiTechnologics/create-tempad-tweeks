@@ -30,14 +30,6 @@ public class TMRecipeProvider extends RecipeProvider implements IConditionBuilde
     @Override
     @ParametersAreNonnullByDefault
     protected void buildRecipes(RecipeOutput recipeOutput) {
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, TempadBlocks.BUDDING_BASE,1)
-                .pattern("EBE")
-                .pattern("BAB")
-                .pattern("EBE")
-                .define('E',TempadItems.ENDER_DUST)
-                .define('B', Items.BONE_MEAL)
-                .define('A', Blocks.AMETHYST_BLOCK)
-                .unlockedBy("has_amethyst", has(Blocks.AMETHYST_BLOCK)).save(recipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, TempadItems.STEEL_DUST,1)
                 .pattern("ICC")
@@ -56,29 +48,7 @@ public class TMRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .unlockedBy("has_steel",has(TempadTags.ItemTags.STEEL_BLOCKS.tag))
                 .save(recipeOutput);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, TempadBlocks.TIME_CRYSTAL_BLOCK,1)
-                .pattern("TT")
-                .pattern("TT")
-                .define('T',TempadItems.TIME_CRYSTAL_SHARD)
-                .unlockedBy("has_time", has(TempadItems.TIME_CRYSTAL_SHARD)).save(recipeOutput);
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, TempadItems.TIME_CRYSTAL_SHARD,4)
-                .requires(TempadBlocks.TIME_CRYSTAL_BLOCK)
-                .unlockedBy("has_time",has(TempadBlocks.TIME_CRYSTAL_BLOCK))
-                .save(recipeOutput);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, TempadItems.TIME_ELECTRON_TUBE,1)
-                .pattern("T")
-                .pattern("B")
-                .define('T',TempadItems.TIME_CRYSTAL_SHARD)
-                .define('B',TempadTags.ItemTags.BRASS_PLATES.tag)
-                .unlockedBy("has_time", has(TempadItems.TIME_CRYSTAL_SHARD)).save(recipeOutput);
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.ENDER_PEARL,1)
-                .pattern("EEE")
-                .pattern("E E")
-                .pattern("EEE")
-                .define('E',TempadItems.ENDER_SHARD)
-                .unlockedBy("has_ender", has(TempadItems.ENDER_SHARD)).save(recipeOutput);
 
         oreSmelting(recipeOutput,STEEL,RecipeCategory.MISC, TempadItems.STEEL_INGOT.get(),0.50f,50,"steel");
         oreBlasting(recipeOutput,STEEL,RecipeCategory.MISC,TempadItems.STEEL_INGOT.get(),0.50f,100,"steel");
