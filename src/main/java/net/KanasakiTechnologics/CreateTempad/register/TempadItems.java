@@ -24,6 +24,10 @@ public class TempadItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> TIME_STEEL_SHEET = ITEMS.register("time_steel_sheet",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> AMETHYST_DUST = ITEMS.register("amethyst_dust",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> ENDER_DUST = ITEMS.register("ender_pearl_dust",
+            () -> new Item(new Item.Properties()));
 
     //Shimmer
     public static final DeferredItem<Item> SHIMMER_BUCKET = ITEMS.register("shimmer_bucket",

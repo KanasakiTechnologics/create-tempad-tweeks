@@ -33,7 +33,13 @@ public class TMItemTagsProvider extends ItemTagsProvider {
                 .add(TempadItems.IRON_DUST.get());
         tag(TempadTags.ItemTags.COAL_DUSTS.tag)
                 .add(TempadItems.COAL_DUST.get());
+        tag(TempadTags.ItemTags.AMETHYST_DUSTS.tag)
+                .add(TempadItems.AMETHYST_DUST.get());
+        tag(TempadTags.ItemTags.ENDER_DUSTS.tag)
+                .add(TempadItems.ENDER_DUST.get());
         tag(TempadTags.ItemTags.DUSTS.tag)
+                .add(TempadItems.AMETHYST_DUST.get())
+                .add(TempadItems.ENDER_DUST.get())
                 .add(TempadItems.STEEL_DUST.get())
                 .add(TempadItems.IRON_DUST.get())
                 .add(TempadItems.COAL_DUST.get());

@@ -1,6 +1,8 @@
-// 1.21.1	2026-01-04T10:57:45.5214377	Tags for minecraft:item mod id createtempad
+// 1.21.1	2026-01-04T11:11:49.2059483	Tags for minecraft:item mod id createtempad
+3608ca2e19f57c30b05afef72f95f28d162d76f7 data/c/tags/item/amethyst_dusts.json
 658c71d6c1ea701be01b18ad94292a6dfad53e51 data/c/tags/item/coal_dusts.json
-e8ad862a89ac20a12d24d456b31f124d3fca9c66 data/c/tags/item/dusts.json
+9f44e84943e87ebd9a83f74a11fb8f19c67fd885 data/c/tags/item/dusts.json
+19f1b0410551f655e1688072e2515b462fdf5529 data/c/tags/item/dusts/ender.json
 0e04ed710bd1d0b2bd6f5c521a637911c7970bf5 data/c/tags/item/dusts/iron.json
 7b1aa4ba48c2b4f34b309c78200a032d2328c757 data/c/tags/item/dusts/steel.json
 98cebd362def8b1084f7814253b0c396c8c70ced data/c/tags/item/ingots.json

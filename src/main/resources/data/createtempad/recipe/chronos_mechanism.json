@@ -1,4 +1,10 @@
 {
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "createmanacology"
+    }
+  ],
   "type": "create:sequenced_assembly",
   "ingredient": {
     "item": "createtempad:time_steel_sheet"
@@ -46,7 +52,7 @@
           "item": "createtempad:incomplete_chrono_mechanism"
         },
         {
-          "item": "createtempad:integrated_circuit"
+          "item": "createmanacology:integrated_circuit"
         }
       ],
       "results": [

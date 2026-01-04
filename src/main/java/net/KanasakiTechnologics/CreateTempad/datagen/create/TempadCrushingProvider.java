@@ -28,6 +28,18 @@ public final class TempadCrushingProvider extends CrushingRecipeGen {
                     .require(TempadTags.ItemTags.IRON_INGOTS.tag)
                     .output(TempadItems.IRON_DUST)
                     .output(25f,TempadItems.IRON_DUST)
-                    .output(25f, AllItems.EXP_NUGGET));
+                    .output(25f, AllItems.EXP_NUGGET)),
+
+            AMETHYST_DUST = create("amethyst_dust", b -> b.duration(150)
+                    .require(Items.AMETHYST_SHARD)
+                            .output(TempadItems.AMETHYST_DUST)
+                            .output(25f,TempadItems.AMETHYST_DUST)
+                            .output(25f, AllItems.EXP_NUGGET)),
+
+            ENDER_DUST = create("ender_dust", b -> b.duration(150)
+                    .require(Items.ENDER_PEARL)
+                            .output(TempadItems.ENDER_DUST)
+                            .output(25f,TempadItems.ENDER_DUST)
+                            .output(25f, AllItems.EXP_NUGGET));
 
 }
