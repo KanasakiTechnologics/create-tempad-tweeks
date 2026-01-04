@@ -59,9 +59,6 @@ public class CreateTempad {
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS){
-            event.accept(TempadItems.ENDER_SHARD);
-            event.accept(TempadItems.AMETHYST_DUST);
-            event.accept(TempadItems.ENDER_DUST);
             event.accept(TempadItems.IRON_DUST);
             event.accept(TempadItems.COAL_DUST);
             event.accept(TempadItems.STEEL_DUST);

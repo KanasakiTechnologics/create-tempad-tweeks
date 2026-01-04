@@ -14,10 +14,6 @@ public class TempadItems {
 
 
     //Ingots,Blocks,Dusts
-    public static final DeferredItem<Item> AMETHYST_DUST = ITEMS.register("amethyst_dust",
-            () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> ENDER_DUST = ITEMS.register("ender_pearl_dust",
-            () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> IRON_DUST = ITEMS.register("iron_dust",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> COAL_DUST = ITEMS.register("coal_dust",
@@ -28,25 +24,17 @@ public class TempadItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> TIME_STEEL_SHEET = ITEMS.register("time_steel_sheet",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> ENDER_SHARD = ITEMS.register("ender_shard",
-            () -> new Item(new Item.Properties()));
 
     //Shimmer
     public static final DeferredItem<Item> SHIMMER_BUCKET = ITEMS.register("shimmer_bucket",
             () -> new BucketItem(TempadFluid.SHIMMER.get(),new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).durability(0)));
 
     //Time Shard
-    public static final DeferredItem<Item> TIME_CRYSTAL_SHARD = ITEMS.register("time_shard",
-            () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> TIME_ELECTRON_TUBE = ITEMS.register("time_electron_tube",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> CHRONOS_MECHANISM = ITEMS.register("chrono_mechanism",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> INCOMPLETE_CHRONOS_MECHANISM = ITEMS.register("incomplete_chrono_mechanism",
-            () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> INTEGRATED_CIRCUIT = ITEMS.register("integrated_circuit",
-            () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> INCOMPLETE_INTEGRATED_CIRCUIT = ITEMS.register("incomplete_integrated_circuit",
             () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus){ITEMS.register(eventBus);}

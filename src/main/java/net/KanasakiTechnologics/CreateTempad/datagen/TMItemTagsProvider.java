@@ -24,27 +24,18 @@ public class TMItemTagsProvider extends ItemTagsProvider {
     protected void addTags(HolderLookup.Provider provider) {
         tag(TempadTags.ItemTags.STEEL_BLOCKS.tag)
                 .add(TempadBlocks.STEEL_BLOCK.asItem());
-        tag(TempadTags.ItemTags.TIME_BLOCKS.tag)
-                .add(TempadBlocks.TIME_CRYSTAL_BLOCK.asItem());
         tag(TempadTags.ItemTags.STORAGE_BLOCKS.tag)
-                .add(TempadBlocks.TIME_CRYSTAL_BLOCK.asItem())
                 .add(TempadBlocks.STEEL_BLOCK.asItem());
 
         tag(TempadTags.ItemTags.STEEL_DUSTS.tag)
                 .add(TempadItems.STEEL_DUST.get());
         tag(TempadTags.ItemTags.IRON_DUSTS.tag)
                 .add(TempadItems.IRON_DUST.get());
-        tag(TempadTags.ItemTags.ENDER_DUSTS.tag)
-                .add(TempadItems.ENDER_DUST.get());
-        tag(TempadTags.ItemTags.AMETHYST_DUSTS.tag)
-                .add(TempadItems.AMETHYST_DUST.get());
         tag(TempadTags.ItemTags.COAL_DUSTS.tag)
                 .add(TempadItems.COAL_DUST.get());
         tag(TempadTags.ItemTags.DUSTS.tag)
                 .add(TempadItems.STEEL_DUST.get())
                 .add(TempadItems.IRON_DUST.get())
-                .add(TempadItems.ENDER_DUST.get())
-                .add(TempadItems.AMETHYST_DUST.get())
                 .add(TempadItems.COAL_DUST.get());
 
         tag(TempadTags.ItemTags.STEEL_INGOTS.tag)

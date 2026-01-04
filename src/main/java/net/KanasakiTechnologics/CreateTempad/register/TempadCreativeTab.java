@@ -18,13 +18,8 @@ public class TempadCreativeTab {
                     .title(Component.translatable("creativetab.createmanacology.tempad"))
                     .displayItems(((itemDisplayParameters, output) -> {
                         output.accept(TempadItems.SHIMMER_BUCKET);
-                        output.accept(TempadItems.INTEGRATED_CIRCUIT);
                         output.accept(TempadItems.CHRONOS_MECHANISM);
                         output.accept(TempadItems.TIME_ELECTRON_TUBE);
-                        output.accept(TempadItems.TIME_CRYSTAL_SHARD);
-                        output.accept(TempadBlocks.BUDDING_BASE);
-                        output.accept(TempadBlocks.TIME_CRYSTAL_BLOCK);
-                        output.accept(TempadBlocks.BUDDING_TIME_CRYSTAL);
                     })).build());
 
     public static void register(IEventBus eventBus){

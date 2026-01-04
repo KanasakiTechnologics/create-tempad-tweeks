@@ -20,10 +20,7 @@ public class TMBlockTagsProvider extends BlockTagsProvider {
     protected void addTags(HolderLookup.Provider provider) {
         tag(TempadTags.BlockTags.STEEL_BLOCKS.tag)
                 .add(TempadBlocks.STEEL_BLOCK.get());
-        tag(TempadTags.BlockTags.TIME_BLOCKS.tag)
-                .add(TempadBlocks.TIME_CRYSTAL_BLOCK.get());
         tag(TempadTags.BlockTags.STORAGE_BLOCKS.tag)
-                .add(TempadBlocks.TIME_CRYSTAL_BLOCK.get())
                 .add(TempadBlocks.STEEL_BLOCK.get());
     }
 }
